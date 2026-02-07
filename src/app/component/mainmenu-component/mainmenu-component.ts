@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, ViewEncapsulation, ViewChild, ElementRef } from '@angular/core';
+
 declare var initSlider: any; // script.js içindeki fonksiyon
 
 @Component({
@@ -7,13 +8,26 @@ declare var initSlider: any; // script.js içindeki fonksiyon
   styleUrls: ['./mainmenu-component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class MainmenuComponent implements AfterViewInit {
 
-  ngAfterViewInit() {
+export class MainmenuComponent  implements AfterViewInit {
+@ViewChild('bgVideo') bgVideo!: ElementRef<HTMLVideoElement>;
 
-    if (initSlider) {
-      initSlider();  // script.js içindeki fonksiyonu çağırıyoruz
-    }
+ngAfterViewInit() {
+  const vid = this.bgVideo.nativeElement;
+
+  vid.muted = true;
+
+  const tryPlay = () => {
+    vid.play().catch(() => {
+      setTimeout(() => vid.play(), 300);
+    });
+  };
+
+  if (vid.readyState >= 2) {
+    tryPlay();
+  } else {
+    vid.onloadeddata = tryPlay;
   }
-}
 
+}
+}

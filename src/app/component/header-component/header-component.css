@@ -8,7 +8,7 @@
 .header-top {
   background: -webkit-gradient(linear, left bottom, right bottom,
       color-stop(0, #0c8016),
-      color-stop(1, #48980b));
+      color-stop(1, #000000));
   color: #fff;
   overflow: hidden;
   white-space: nowrap;

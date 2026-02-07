@@ -4,7 +4,23 @@
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #000000;
+}
+
+
+
+.hero-video {
+  position: relative;
+
+  overflow: hidden;
+  z-index: 20000;
+}
+
+.hero-video video {
+ 
+  width: 100%;
+  object-fit: cover;   /* ekranı tamamen kaplar */
+  pointer-events: none; /* hover + click kapatır */
 }
 
 .slider {
@@ -34,18 +50,32 @@
   pointer-events: none;
 }
 
-.dotcontainer {
+.slide video {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+} 
+
+ .dotcontainer {
   height: 20px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .dots {
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -60,12 +90,12 @@
   border-radius: 50%;
   cursor: pointer;
   transition: 0.2s;
-  background: #ffffff;
+  background: #2a7408;
 }
 
 .dot.active {
-  background: rgb(255, 0, 0);
-}
+  background: rgb(255, 255, 255);
+} */
 
 .mainbarcomponent {
   display: flex;
@@ -73,7 +103,7 @@
   overflow: hidden;
 }
 
-.mainbar {
+/* .mainbar {
   margin-top: 10;
   position: relative;
   display: flex;
@@ -114,7 +144,7 @@
   font-weight: 600;
   border-left: 5px solid #d32f2f;
   /* Mavi çizgi */
-  padding-left: 10px;
+/* padding-left: 10px;
   margin-bottom: 25px;
 }
 
@@ -132,14 +162,26 @@
 
 .content a:hover {
   text-decoration: underline;
+} */
+
+.menu-banner {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
-.hemenara {
+.menu-image img {
+  width: 100%;
+  height: 135px;
+}
+
+.menu-btn {
   position: absolute;
   z-index: 10;
   display: flex;
-  margin-left: auto;
-  bottom: 20px;
+  right: 20px;
 }
 
 .btn {
@@ -160,7 +202,7 @@
 }
 
 .service-cards {
-  background-color: #ffffff;
+  background-color: #000000;
   width: auto;
   height: auto;
   display: flex;
@@ -191,7 +233,7 @@
 .card {
   width: 300px;
   height: 400px;
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -285,22 +327,37 @@
     color: rgb(255, 255, 255);
   }
 
-  .content a{
-     font-weight: 600;
-     text-shadow: 2px 2px 5px black;
+  .content a {
+    font-weight: 600;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .menu-btn {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    right: 30px;
   }
 
   .btn {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
     height: 40px;
-    width: 140px;
-    font-size: 18px;
-    font-weight: 500;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 600;
     margin-bottom: auto;
   }
 
+  .btn i {
+    font-size: 17px;
+  }
+
   .service-cards {
-    background-color: #ffffff;
+    background-color: #000000;
     width: auto;
     height: auto;
     display: flex;
@@ -359,7 +416,7 @@
     background-repeat: no-repeat;
   }
 
-    .card4 {
+  .card4 {
     background-image: url('/card4.jpg');
     background-size: cover;
     background-position: center;
