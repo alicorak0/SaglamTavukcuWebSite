@@ -1,0 +1,65 @@
+<div class="menu-wrapper">
+ <aside class="sidebar">
+    <ul>
+        <li>
+      <button 
+        [routerLink]="['/menu', 'grills']" 
+        class="sidebar-btn" 
+        [class.active]="activeKey === 'grills'">
+        Izgaralar
+      </button>
+    </li>
+
+    <li>
+      <button 
+        [routerLink]="['/menu', 'doners']" 
+        class="sidebar-btn" 
+        [class.active]="activeKey === 'doners'">
+        Dönerler
+      </button>
+    </li>
+
+    <li>
+      <button 
+        [routerLink]="['/menu', 'appetizers']" 
+        class="sidebar-btn" 
+        [class.active]="activeKey === 'appetizers'">
+        Mezeler
+      </button>
+    </li>
+
+    <li>
+      <button 
+        [routerLink]="['/menu', 'snacks']" 
+        class="sidebar-btn" 
+        [class.active]="activeKey === 'snacks'">
+        Aperatifler
+      </button>
+    </li>
+
+
+    </ul>
+  </aside>
+
+
+
+   <!-- Main Content -->
+  <main class="menu-content">
+  <div class="category-title">
+    <!-- categoryName mapping ile -->
+    <h2>{{ categoryNameMap[activeKey] }}</h2>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card" *ngFor="let product of products">
+      <img [src]="'/' + product.image" alt="{{ product.productName }}">
+      <h3 class="product-title">{{ product.productName }}</h3>
+      <p class="product-description">{{ product.description }}</p>
+      <div class="product-footer">
+        <span class="product-price">₺{{ product.price }}</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+</div>
