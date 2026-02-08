@@ -1,9 +1,9 @@
 .footer {
     background: linear-gradient(to right,
-            #000000 0%,
-            #330505 35%,
-            #610808 65%,
-            #910a0a 100%);
+            #33c942 0%,
+            #0d7516 35%,
+            #032f08 65%,
+            #000000 100%);
     color: #eeeeee;
     padding: 30px 20px;
     font-family: "Montserrat", sans-serif;
@@ -22,7 +22,7 @@
 
 
 .footer-logo img {
-    width: 120px;
+    width: 140px;
 }
 
 .footer-info {
@@ -84,7 +84,7 @@
     }
 
     .footer-logo img {
-        width: 120px;
+        width: 140px;
     }
 
     .footer-container {
