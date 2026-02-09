@@ -26,7 +26,8 @@ categoryNameMap: { [key: string]: string } = {
   'grills': 'Izgaralar',
   'doners': 'Dönerler',
   'appetizers': 'Mezeler',
-  'snacks': 'Aperatifler'
+  'snacks': 'Aperatifler',
+  'drinks': 'İçecekler'
  
 };
 

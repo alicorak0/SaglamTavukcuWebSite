@@ -135,4 +135,32 @@
     color: #428533;
     text-align: center;
   }
+
+
+/* Mobil (<600px) → 1 sütun */
+@media (max-width: 600px) {
+
+  .category-card {
+    height: 50px;
+    border: 2px solid #428533;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .category-card h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #428533;
+    text-align: center;
+  }
+}
+
 }
