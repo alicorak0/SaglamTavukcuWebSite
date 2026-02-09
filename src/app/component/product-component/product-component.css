@@ -173,6 +173,9 @@ main {
   .menu-wrapper {
     flex-direction: column;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .sidebar {
@@ -192,6 +195,7 @@ main {
   .products-grid {
     grid-template-columns: 1fr;
     overflow-x: hidden;
+    padding: 0 15px;
   }
 
   .product-card img {

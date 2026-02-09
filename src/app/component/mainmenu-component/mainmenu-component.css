@@ -9,9 +9,7 @@
 
 .hero-video {
   position: relative;
-
   overflow: hidden;
-  z-index: 20000;
 }
 
 .hero-video video {
