@@ -17,9 +17,9 @@ import { FreeMode } from 'swiper/modules';
 export class MenuComponent implements AfterViewInit {
 
  products: Product[] = [
-  { productId: 1, categoryName: 'burgers', productName: 'Big Burger', description: '200gr dana eti', tooltip: 'En çok satan', price: 150, image: 'cheese-burger.jpg' },
-    { productId: 2, categoryName: 'burgers', productName: 'Big Burger', description: '200gr dana eti', tooltip: 'En çok satan', price: 150, image: 'cheese-burger.jpg' },  { productId: 1, categoryName: 'burgers', productName: 'Big Burger', description: '200gr dana eti', tooltip: 'En çok satan', price: 150, image: 'cheese-burger.jpg' },
-  { productId: 3, categoryName: 'burgers', productName: 'Big Burger', description: '200gr dana eti', tooltip: 'En çok satan', price: 150, image: 'cheese-burger.jpg' }
+  { productId: 1, categoryName: 'burgers', productName: 'Big Burger', description: '200gr dana eti', tooltip: 'En çok satan', price: 150, image: 'mozarella-sticks.jpg' },
+    { productId: 2, categoryName: 'burgers', productName: 'Big Burger', description: '200gr dana eti', tooltip: 'En çok satan', price: 150, image: 'mozarella-sticks.jpg' },  { productId: 1, categoryName: 'burgers', productName: 'Big Burger', description: '200gr dana eti', tooltip: 'En çok satan', price: 150, image: 'cheese-burger.jpg' },
+  { productId: 3, categoryName: 'burgers', productName: 'Big Burger', description: '200gr dana eti', tooltip: 'En çok satan', price: 150, image: 'mozarella-sticks.jpg' }
 
 ]
 

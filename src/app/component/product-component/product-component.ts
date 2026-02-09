@@ -23,11 +23,12 @@ export class ProductComponent implements OnInit {
   activeKey: string = ''; // Sidebar hangi kategori aktif
 
 categoryNameMap: { [key: string]: string } = {
-  'grills': 'Izgaralar',
-  'doners': 'Dönerler',
-  'appetizers': 'Mezeler',
-  'snacks': 'Aperatifler',
-  'drinks': 'İçecekler'
+  'ızgaralar': 'Izgaralar',
+  'dönerler': 'Dönerler',
+  'mezeler': 'Mezeler',
+  'aperatifler': 'Aperatifler',
+  'içecekler': 'İçecekler',
+  'çiğ-ürünler': 'Çiğ Ürünler'
  
 };
 

@@ -2,35 +2,41 @@
   <aside class="sidebar">
     <ul>
       <li>
-        <button [routerLink]="['/menu', 'grills']" class="sidebar-btn" [class.active]="activeKey === 'grills'">
+        <button [routerLink]="['/menu', 'ızgaralar']" class="sidebar-btn" [class.active]="activeKey === 'ızgaralar'">
           Izgaralar
         </button>
       </li>
 
       <li>
-        <button [routerLink]="['/menu', 'doners']" class="sidebar-btn" [class.active]="activeKey === 'doners'">
+        <button [routerLink]="['/menu', 'dönerler']" class="sidebar-btn" [class.active]="activeKey === 'dönerler'">
           Dönerler
         </button>
       </li>
 
       <li>
-        <button [routerLink]="['/menu', 'appetizers']" class="sidebar-btn" [class.active]="activeKey === 'appetizers'">
+        <button [routerLink]="['/menu', 'mezeler']" class="sidebar-btn" [class.active]="activeKey === 'mezeler'">
           Mezeler
         </button>
       </li>
 
       <li>
-        <button [routerLink]="['/menu', 'snacks']" class="sidebar-btn" [class.active]="activeKey === 'snacks'">
+        <button [routerLink]="['/menu', 'aperatifler']" class="sidebar-btn" [class.active]="activeKey === 'aperatifler'">
           Aperatifler
         </button>
       </li>
 
       <li>
-      <button [routerLink]="['/menu', 'drinks']" class="sidebar-btn" [class.active]="activeKey === 'drinks'">
+      <button [routerLink]="['/menu', 'içecekler']" class="sidebar-btn" [class.active]="activeKey === 'içecekler'">
         İçecekler
       </button>
       </li>
 
+
+      <li>
+      <button [routerLink]="['/menu', 'çiğ-ürünler']" class="sidebar-btn" [class.active]="activeKey === 'çiğ-ürünler'">
+        Çiğ Ürünler
+      </button>
+      </li>
 
     </ul>
   </aside>
