@@ -6,6 +6,7 @@ import { MainmenuComponent } from './component/mainmenu-component/mainmenu-compo
 import { ProductComponent } from "./component/product-component/product-component";
 import { MenuComponent } from "./component/menu-component/menu-component";
 import { CategoriesComponent } from "./component/categories-component/categories-component";
+import { AboutUsComponent } from "./component/about-us-component/about-us-component";
 
 export const routes: Routes = [
   //  { path: '', redirectTo: 'anasayfa', pathMatch: 'full' },
@@ -25,7 +26,8 @@ export const routes: Routes = [
         path:':name',component: ProductComponent   // 👈 /menu/burgers, /menu/snacks vs açılınca burası render olu  r
       }
     ]
-  }
+  },
+  {path:'hakkımızda', component: AboutUsComponent}
 
 
 
