@@ -22,21 +22,38 @@
 
 /* Kart stili */
 .category-card {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
-  border: 2px solid #428533;
+  border: 2px solid #000000;
   border-radius: 8px;
   background-color: #f0f0f0;
 }
 
+.category-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
 .category-card h3 {
+  position: absolute;
   margin: 0;
-  font-weight: 600;
-  font-size: 18px;
-  color: #428533;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
   text-align: center;
+  z-index: 999;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.8);
+  letter-spacing: 0.8px;
 }
 
 /* Tablet (600px - 900px) → 2 sütun */
@@ -50,9 +67,9 @@
 
   .category-card h3 {
     margin: 0;
-    font-weight: 600;
-    font-size: 20px;
-    color: #428533;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
     text-align: center;
   }
 }
@@ -62,7 +79,7 @@
 
   .category-card {
     height: 50px;
-    border: 2px solid #428533;
+    border: 2px solid #000000;
     border-radius: 8px;
     background-color: #f0f0f0;
   }
@@ -76,9 +93,10 @@
 
   .category-card h3 {
     margin: 0;
-    font-weight: 600;
+    font-weight: 650;
     font-size: 20px;
-    color: #428533;
+    color: #ffffff;
     text-align: center;
+    right: 10px;
   }
 }

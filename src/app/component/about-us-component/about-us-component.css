@@ -1,20 +1,7 @@
 .about {
-  background: #111;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 70px 20px;
-  background: linear-gradient(135deg, #1a1a1a, #222);
-}
-
-.hero h1 {
-  font-size: 38px;
-  color: #2ecc71;
-  margin-bottom: 10px;
 }
 
 /* CONTAINER */
@@ -24,18 +11,6 @@
   padding: 60px 20px;
 }
 
-/* STORY */
-.story h2 {
-  color: #2ecc71;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.story p {
-  text-align: center;
-  line-height: 1.8;
-  opacity: .9;
-}
 
 /* GUARANTEES */
 .guarantees {
@@ -45,21 +20,23 @@
 }
 
 .card {
-  background: #1c1c1c;
+  background: #ffffff;
   padding: 25px;
   border-radius: 14px;
   text-align: center;
   transition: .3s;
+  box-shadow: 2px 2px 5px rgb(34, 34, 34, 0.8);
 }
 
 .card:hover {
   transform: translateY(-5px);
   background: #222;
+  color: #ffffff;
 }
 
 .card i {
   font-size: 28px;
-  color: #2ecc71;
+  color: #d32f2f;
   margin-bottom: 12px;
 }
 
@@ -73,12 +50,16 @@
   justify-content: space-around;
   text-align: center;
   padding: 50px 20px;
-  background: #181818;
+  background: #000000;
   margin-top: 40px;
 }
 
 .stats h2 {
-  color: #2ecc71;
+  color: #d32f2f;
+}
+
+.stats span{
+  color: #ffffff;
 }
 
 /* RESPONSIVE */
@@ -97,4 +78,11 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .card:hover {
+    transform: none;
+    background: #c7c7c7;
+    color: #222;
+  }
+
 }
