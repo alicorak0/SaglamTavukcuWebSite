@@ -28,8 +28,8 @@ categoryNameMap: { [key: string]: string } = {
   'mezeler': 'Mezeler',
   'aperatifler': 'Aperatifler',
   'içecekler': 'İçecekler',
-  'çiğ-ürünler': 'Çiğ Ürünler'
- 
+  'çiğ-ürünler': 'Çiğ Ürünler',
+  'çorbalar': 'Çorbalar'
 };
 
 

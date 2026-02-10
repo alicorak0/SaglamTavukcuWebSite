@@ -82,7 +82,8 @@
 }
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -118,14 +119,28 @@
 }
 
 .card3 {
-  background-image: url('/card3.jpg');
+  background-image: url('/card6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .card4 {
+  background-image: url('/card5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card5 {
   background-image: url('/card4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card6 {
+  background-image: url('/card3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -233,7 +248,7 @@
 
   .card1 {
     background-image: url('/card1.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -246,14 +261,14 @@
   }
 
   .card3 {
-    background-image: url('/card3.jpg');
+    background-image: url('/card6.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   .card4 {
-    background-image: url('/card4.jpg');
+    background-image: url('/card5.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
