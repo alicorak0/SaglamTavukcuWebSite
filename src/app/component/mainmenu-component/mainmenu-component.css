@@ -9,15 +9,14 @@
 
 .hero-video {
   position: relative;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
+  inset: 0;
 }
 
 .hero-video video {
   width: 100%;
-  object-fit: cover;
-  /* ekranı tamamen kaplar */
-  pointer-events: none;
-  /* hover + click kapatır */
+  height: auto;
 }
 
 .menu-banner {

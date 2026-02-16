@@ -9,25 +9,31 @@ declare var initSlider: any; // script.js içindeki fonksiyon
   encapsulation: ViewEncapsulation.None
 })
 
-export class MainmenuComponent  implements AfterViewInit {
-@ViewChild('bgVideo') bgVideo!: ElementRef<HTMLVideoElement>;
+export class MainmenuComponent implements AfterViewInit {
+  @ViewChild('bgVideo') bgVideo!: ElementRef<HTMLVideoElement>;
 
-ngAfterViewInit() {
-  const vid = this.bgVideo.nativeElement;
+  ngAfterViewInit() {
+    const vid = this.bgVideo.nativeElement;
 
-  vid.muted = true;
+    vid.muted = true;
 
-  const tryPlay = () => {
-    vid.play().catch(() => {
-      setTimeout(() => vid.play(), 300);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        this.bgVideo.nativeElement.play().catch(() => { });
+      });
     });
-  };
 
-  if (vid.readyState >= 2) {
-    tryPlay();
-  } else {
-    vid.onloadeddata = tryPlay;
+    const tryPlay = () => {
+      vid.play().catch(() => {
+        setTimeout(() => vid.play(), 300);
+      });
+    };
+
+    if (vid.readyState >= 2) {
+      tryPlay();
+    } else {
+      vid.onloadeddata = tryPlay;
+    }
+
   }
-
-}
 }
