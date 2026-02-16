@@ -7,7 +7,7 @@ import { Product } from '../models/product';
 export class ProductService {
 
   private products: Product[] = [
-    { productId: 1, categoryName: 'ızgaralar', productName: 'Tavuk Göğsü Izgara', description: 'Özel baharatlarla marine edilmiş, kömür ateşinde ızgara tavuk göğsü.', tooltip: 'En çok satan', price: 200, image: 'ızgaralar-1.jpg' },
+    { productId: 1, categoryName: 'ızgaralar', productName: 'Tavuk Göğsü Izgara', description: 'Özel baharatlarla marine edilmiş, kömür ateşinde ızgara tavuk göğsü.', tooltip: 'En çok satan', price: 0, image: 'ızgaralar-1.jpg' },
     { productId: 2, categoryName: 'ızgaralar', productName: 'Tavuk Kanat Izgara', description: 'Çıtır dış yüzey, sulu iç dokuya sahip, köz tadında ızgara kanatlar.', tooltip: 'En çok satan', price: 250, image: 'ızgaralar-2.jpg' },
     { productId: 3, categoryName: 'ızgaralar', productName: 'Barbekülü Kanat', description: 'Özel barbekü sosuyla harmanlanmış, fırın ve ızgara lezzetini bir arada sunar.', tooltip: 'En çok satan', price: 250, image: 'ızgaralar-3.jpg' },
 

@@ -20,11 +20,11 @@ export class MenuComponent implements AfterViewInit {
     {
       productId: 1,
       categoryName: 'burgers',
-      productName: 'Döner Sandviç',
+      productName: 'Döner Dürüm',
       description: 'Özenle marine edilmiş 100 gr tavuk döner, taze ekmek ve özel soslarımızla hazırlanır.',
       tooltip: 'En çok satan',
       price: 150,
-      image: 'dönerler-2.jpg'
+      image: 'dönerler-3.jpg'
     },
     {
       productId: 2,
